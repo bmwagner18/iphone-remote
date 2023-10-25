@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8">
+    <title>Ben's Remote</title>
+    <style>
+        .block {
+          display: block;
+          width: 100%;
+          border: 2px solid #051614;
+          background-color: #033e58;
+          padding: 14px 28px;
+          font-size: 22px;
+          cursor: pointer;
+          text-align: center;
+          font-weight: bold;
+          color: rgb(255, 255, 255);
+          margin: 1px 0;
+        }
+    </style>
+    <script>
+      function goToLink(url) {
+          window.location.href = url;
+      }
+  </script>
+  </head>
+  <body>
+    <button type="button" class="block" onclick="goToLink('next')" >Channel up</button>
+    <button type="button" class="block" onclick="goToLink('recent')" >Last channel</button>
+    <button type="button" class="block" onclick="goToLink('startPIP')" >Turn on PIP</button>
+    <button type="button" class="block" onclick="goToLink('stopPIP')" >Turn off PIP</button>
+    <button type="button" class="block" onclick="goToLink('switchPIP')" >Switch PIP</button>
+    <button type="button" class="block" onclick="goToLink('switchaudio')" >Change audio</button>
+    <button type="button" class="block" onclick="goToLink('close')" >Close</button>
+  </body>
+</html>
