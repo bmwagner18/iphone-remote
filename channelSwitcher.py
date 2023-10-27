@@ -17,21 +17,19 @@ def switcher(command:str):
     elif command == '/startPIP':
         print('Starting PIP')
         pag.hotkey('altleft','tab') # alt-tab forwards
-        pag.hotkey('ctrl', '.') # create PIP
+        pag.hotkey('ctrl', 'shiftleft', ']') # create PIP
         pag.hotkey('altleft','tab') # alt-tab forwards
     elif command == '/stopPIP':
         print('Stopping PIP')
         pag.hotkey('altleft','shiftleft') # alt-tab forwards
-        pag.hotkey('ctrl', '.') # close PIP
-        pag.press('f') # go back fullscreen
+        pag.hotkey('ctrl', 'shiftleft', ']') # close PIP
         pag.hotkey('altleft','tab') # alt-tab forwards
     elif command == '/switchPIP':
         print('Switching PIP')
         pag.hotkey('altleft','tab') # alt-tab forwards
-        pag.hotkey('ctrl', '.') # close PIP
-        pag.press('f') # go back fullscreen
+        pag.hotkey('ctrl', 'shiftleft', ']') # close PIP
         pag.hotkey('altleft','tab') # alt-tab forwards
-        pag.hotkey('ctrl', '.') # create PIP
+        pag.hotkey('ctrl', 'shiftleft', ']') # create PIP
         pag.hotkey('altleft','tab') # alt-tab forwards
         pag.hotkey('alt','shiftleft','a') # mute all other tabs
         pag.hotkey('alt','shiftleft','n') # unmute this tab
